@@ -3,7 +3,7 @@ import {AbsoluteFill, useCurrentFrame} from 'remotion';
 import {Airliner} from '../components/Airliner';
 import {Camera} from '../components/Camera';
 import {Particles, Streamlines, type View} from '../components/Flow';
-import {Car, Hand} from '../components/HandAndCar';
+import {CAR, Car, Hand} from '../components/HandAndCar';
 import {ForceArrow} from '../components/Infographics';
 import {SceneShell} from '../components/SceneShell';
 import {LabBackdrop, Vignette} from '../components/Sky';
@@ -16,14 +16,14 @@ const L = (sec: number) => local('hand', sec);
 const VIEW: View = {cx: 960, cy: 540, s: 170};
 
 /** Roadside scenery that streams past (car is moving right). */
-const Roadside: React.FC<{scroll: number; opacity: number}> = ({scroll, opacity}) => {
+const Roadside: React.FC<{scroll: number; opacity: number; push: number}> = ({scroll, opacity, push}) => {
 	const r = rng(9);
 	const trees = new Array(14).fill(0).map((_, i) => ({x: i * 260 + r() * 120, h: 140 + r() * 120}));
 	const wrap = (x: number, span: number) => ((x % span) + span) % span;
 	return (
 		<AbsoluteFill style={{opacity}}>
 			<AbsoluteFill style={{background: `linear-gradient(180deg, #0f3a86 0%, ${COLORS.sky500} 45%, ${COLORS.sky300} 70%, #ffd8ae 100%)`}} />
-			<svg width={1920} height={1080} style={{position: 'absolute'}}>
+			<svg width={1920} height={1080} style={{position: 'absolute', transform: `scale(${1 + 0.25 * push})`, transformOrigin: '50% 60%'}}>
 				{/* far hills */}
 				<g transform={`translate(${-wrap(scroll * 0.08, 1920)} 0)`}>
 					{[0, 1920].map((o) => (
@@ -45,15 +45,35 @@ const Roadside: React.FC<{scroll: number; opacity: number}> = ({scroll, opacity}
 						</g>
 					);
 				})}
-				{/* road */}
-				<rect x={0} y={840} width={1920} height={240} fill="#0a1532" />
-				{new Array(12).fill(0).map((_, i) => (
-					<rect key={i} x={wrap(i * 200 - scroll * 1.0, 2400) - 240} y={950} width={110} height={10} rx={5} fill="#ffd27a" opacity={0.75} />
-				))}
+				<rect x={0} y={826} width={1920} height={260} fill="#0b2150" />
 			</svg>
 		</AbsoluteFill>
 	);
 };
+
+/** Wind streaks behind the car on the wide shot (screen space, deterministic). */
+const SpeedLines: React.FC<{frame: number; opacity: number}> = ({frame, opacity}) => {
+	if (opacity <= 0.01) return null;
+	const r = rng(77);
+	const lines = new Array(22).fill(0).map(() => ({y: 120 + r() * 640, len: 120 + r() * 220, v: 38 + r() * 30, o: r() * 2400}));
+	return (
+		<svg width={1920} height={1080} style={{position: 'absolute', opacity}}>
+			{lines.map((l, i) => {
+				const x = ((((l.o - frame * l.v) % 2400) + 2400) % 2400) - 240;
+				return <rect key={i} x={x} y={l.y} width={l.len} height={2.5} rx={1.25} fill="#e6f4ff" opacity={0.45} />;
+			})}
+		</svg>
+	);
+};
+
+// Car at real proportions: the hand (chord 4 units × VIEW.s = 680 px) is ≈ 5.5% of the car's length.
+const CAR_K = 13; // world px per car-artboard unit → car ≈ 12 350 px long
+const WRIST_ON_CAR: [number, number] = [712, 136]; // just outside the open front window
+const CAR_X = 620 - WRIST_ON_CAR[0] * CAR_K; // hand wrist sits at world (620, 540)
+const CAR_Y = 540 - WRIST_ON_CAR[1] * CAR_K;
+const GROUND_Y = CAR_Y + CAR.ground * CAR_K;
+const SHOULDER: [number, number] = [CAR_X + 615 * CAR_K, CAR_Y + 152 * CAR_K];
+const WIDE = {x: CAR_X + 505 * CAR_K, zoom: 0.135, y: GROUND_Y - (900 - 540) / 0.135};
 
 export const S3Hand: React.FC = () => {
 	const frame = useCurrentFrame();
@@ -63,19 +83,25 @@ export const S3Hand: React.FC = () => {
 	const flowBend = prog(frame, L(CUES.tilt), L(CUES.tilt) + 30, EASE.inOut);
 	const morph = prog(frame, L(CUES.airplaneWing), L(CUES.airplaneWing) + 36, EASE.inOut);
 	const up = prog(frame, L(CUES.feelAir), L(CUES.upward) + 8, EASE.out);
-	const flowIn = prog(frame, L(CUES.understand), L(CUES.hand) + 10);
 
 	// Camera: wide (car + hand) → close on the hand → huge pull-back to the airliner.
 	const zoomIn = prog(frame, L(CUES.hand) - 6, L(CUES.carWindow) + 20, EASE.inOut);
 	const reveal = prog(frame, L(CUES.much), L(CUES.biggerScale) + 22, EASE.inOut);
-	const zoomLog = Math.log(0.42) + (Math.log(1) - Math.log(0.42)) * zoomIn + (Math.log(0.16) - Math.log(1)) * reveal;
-	const zoom = Math.exp(zoomLog);
-	const camX = 360 + 600 * zoomIn;
-	const camY = 620 - 80 * zoomIn - 40 * reveal;
+	// Zoom in on the hand: interpolate zoom logarithmically and keep the hand's screen position moving smoothly.
+	const zPush = Math.exp(Math.log(WIDE.zoom) * (1 - zoomIn));
+	const offX = (VIEW.cx - WIDE.x) * WIDE.zoom * (1 - zoomIn);
+	const offY = (VIEW.cy - WIDE.y) * WIDE.zoom * (1 - zoomIn);
+	const zoom = zPush * Math.exp(Math.log(0.16) * reveal);
+	const camX = VIEW.cx - offX / zPush;
+	const camY = VIEW.cy - offY / zPush - 40 * reveal;
+	// Hand-scale airflow only once we're close enough to see it.
+	const flowIn = prog(frame, L(CUES.understand), L(CUES.hand) + 10) * prog(zoomIn, 0.45, 0.95, EASE.inOut);
 
 	// Car speed & flow time
 	const tau = (frame / FPS) * 1.35;
 	const scroll = frame * 34;
+	const roadScroll = frame * 300; // world px / frame (car moving right)
+	const wrap = (x: number, span: number) => ((x % span) + span) % span;
 
 	// Giant airliner positioned so its mid-span wing section is exactly where the airfoil is.
 	const k = 7.7;
@@ -85,14 +111,25 @@ export const S3Hand: React.FC = () => {
 
 	return (
 		<SceneShell>
-			<Roadside scroll={scroll} opacity={1 - toLab} />
+			<Roadside scroll={scroll} opacity={1 - toLab} push={zoomIn} />
+			<SpeedLines frame={frame} opacity={(1 - zoomIn) * (1 - toLab)} />
 			<AbsoluteFill style={{opacity: toLab}}>
 				<LabBackdrop />
 			</AbsoluteFill>
 			<Camera x={camX} y={camY} zoom={zoom}>
 				<svg width={1920} height={1080} style={{position: 'absolute', overflow: 'visible'}}>
-					{/* the car: hand held out of its open front window */}
-					<Car x={620 - 680 * 2.2} y={560 - 140 * 2.2} width={2200} wheelAngle={frame * 24} opacity={(1 - toLab) * (1 - zoomIn * 0.82)} />
+					{/* road (world space, so it stays under the wheels during the camera move) */}
+					<g opacity={1 - toLab}>
+						<rect x={-40000} y={GROUND_Y - 70} width={80000} height={6000} fill="#0a1532" />
+						<rect x={-40000} y={GROUND_Y - 70} width={80000} height={40} fill="#2b4a86" />
+						{new Array(16).fill(0).map((_, i) => (
+							<rect key={i} x={wrap(i * 3000 - roadScroll, 48000) - 26000} y={GROUND_Y + 420} width={1500} height={90} rx={45} fill="#ffd27a" opacity={0.8} />
+						))}
+					</g>
+					{/* the car: real proportions, hand held out of its open front window; darkened (not see-through) in close-up */}
+					<g opacity={1 - toLab}>
+						<Car x={CAR_X} y={CAR_Y} width={1000 * CAR_K} wheelAngle={frame * 22} dim={0.5 * zoomIn} />
+					</g>
 					{/* giant blueprint airliner for the scale reveal */}
 					<g opacity={reveal}>
 						<Airliner x={acX} y={acY} width={1000 * k} frame={frame} silhouette={0.9} silhouetteColor="#2a63c4" navLights={false} />
@@ -102,7 +139,7 @@ export const S3Hand: React.FC = () => {
 						<Streamlines view={VIEW} progress={flowIn} opacity={0.22 + 0.1 * toLab} straighten={1 - flowBend} />
 						<Particles view={VIEW} tau={tau} perLine={8} straighten={1 - flowBend} opacity={0.9} width={3} />
 					</g>
-					<Hand view={VIEW} tilt={tilt} morph={morph} armOpacity={(1 - toLab) * 1} />
+					<Hand view={VIEW} tilt={tilt} morph={morph} armOpacity={1 - toLab} shoulder={SHOULDER} />
 					<ForceArrow x={VIEW.cx - 10} y={VIEW.cy - 30} angle={0} length={300} progress={up * (1 - reveal)} color={COLORS.cyan} width={26} label="UPWARD PUSH" labelSize={30} />
 					{/* tilt angle indicator */}
 					<g opacity={prog(frame, L(CUES.tilt), L(CUES.tilt) + 12) * (1 - toLab)} stroke={COLORS.orangeSoft} fill="none" strokeWidth={3}>
