@@ -1,0 +1,432 @@
+{
+ "fps": 30,
+ "width": 1920,
+ "height": 1080,
+ "audioDurationSec": 117.080813,
+ "outroSec": 2,
+ "totalFrames": 3573,
+ "crossfadeFrames": 18,
+ "scenes": [
+  {
+   "id": "mystery",
+   "startSec": 0,
+   "endSec": 14.13,
+   "from": 0,
+   "durationInFrames": 442
+  },
+  {
+   "id": "answer",
+   "startSec": 14.13,
+   "endSec": 18.54,
+   "from": 424,
+   "durationInFrames": 150
+  },
+  {
+   "id": "hand",
+   "startSec": 18.54,
+   "endSec": 32.28,
+   "from": 556,
+   "durationInFrames": 430
+  },
+  {
+   "id": "lift",
+   "startSec": 32.28,
+   "endSec": 49.245,
+   "from": 968,
+   "durationInFrames": 527
+  },
+  {
+   "id": "newton",
+   "startSec": 49.245,
+   "endSec": 65.565,
+   "from": 1477,
+   "durationInFrames": 508
+  },
+  {
+   "id": "speed",
+   "startSec": 65.565,
+   "endSec": 76.635,
+   "from": 1967,
+   "durationInFrames": 350
+  },
+  {
+   "id": "forces",
+   "startSec": 76.635,
+   "endSec": 85.365,
+   "from": 2299,
+   "durationInFrames": 280
+  },
+  {
+   "id": "glide",
+   "startSec": 85.365,
+   "endSec": 106.005,
+   "from": 2561,
+   "durationInFrames": 637
+  },
+  {
+   "id": "finale",
+   "startSec": 106.005,
+   "endSec": 119.081,
+   "from": 3180,
+   "durationInFrames": 393
+  }
+ ],
+ "cues": {
+  "title": {
+   "sec": 0.06,
+   "frame": 2
+  },
+  "titleOut": {
+   "sec": 2.43,
+   "frame": 73
+  },
+  "thousands": {
+   "sec": 4.08,
+   "frame": 122
+  },
+  "people": {
+   "sec": 4.86,
+   "frame": 146
+  },
+  "giantMetal": {
+   "sec": 7.14,
+   "frame": 214
+  },
+  "weigh": {
+   "sec": 10.14,
+   "frame": 304
+  },
+  "hundredsOfTons": {
+   "sec": 10.38,
+   "frame": 311
+  },
+  "tons": {
+   "sec": 11.07,
+   "frame": 332
+  },
+  "whyDont": {
+   "sec": 12.51,
+   "frame": 375
+  },
+  "fall": {
+   "sec": 13.41,
+   "frame": 402
+  },
+  "surprising": {
+   "sec": 14.94,
+   "frame": 448
+  },
+  "notEngines": {
+   "sec": 16.5,
+   "frame": 495
+  },
+  "engines": {
+   "sec": 16.98,
+   "frame": 509
+  },
+  "holdThemUp": {
+   "sec": 17.67,
+   "frame": 530
+  },
+  "understand": {
+   "sec": 18.96,
+   "frame": 569
+  },
+  "hand": {
+   "sec": 21.21,
+   "frame": 636
+  },
+  "carWindow": {
+   "sec": 22.41,
+   "frame": 672
+  },
+  "tilt": {
+   "sec": 23.58,
+   "frame": 707
+  },
+  "feelAir": {
+   "sec": 25.59,
+   "frame": 768
+  },
+  "upward": {
+   "sec": 26.88,
+   "frame": 806
+  },
+  "airplaneWing": {
+   "sec": 28.47,
+   "frame": 854
+  },
+  "similar": {
+   "sec": 29.25,
+   "frame": 878
+  },
+  "much": {
+   "sec": 30.78,
+   "frame": 923
+  },
+  "biggerScale": {
+   "sec": 31.26,
+   "frame": 938
+  },
+  "movesForward": {
+   "sec": 33.66,
+   "frame": 1010
+  },
+  "airFlows": {
+   "sec": 34.68,
+   "frame": 1040
+  },
+  "shape": {
+   "sec": 36.799,
+   "frame": 1104
+  },
+  "angle": {
+   "sec": 37.47,
+   "frame": 1124
+  },
+  "airMoves": {
+   "sec": 38.94,
+   "frame": 1168
+  },
+  "differenceInPressure": {
+   "sec": 40.14,
+   "frame": 1204
+  },
+  "pressure": {
+   "sec": 40.77,
+   "frame": 1223
+  },
+  "above": {
+   "sec": 42.99,
+   "frame": 1290
+  },
+  "lower": {
+   "sec": 43.98,
+   "frame": 1319
+  },
+  "below": {
+   "sec": 45.06,
+   "frame": 1352
+  },
+  "upwardForce": {
+   "sec": 47.1,
+   "frame": 1413
+  },
+  "lift": {
+   "sec": 48.39,
+   "frame": 1452
+  },
+  "anotherWay": {
+   "sec": 49.83,
+   "frame": 1495
+  },
+  "wingPushes": {
+   "sec": 52.77,
+   "frame": 1583
+  },
+  "hugeAmount": {
+   "sec": 53.22,
+   "frame": 1597
+  },
+  "downward": {
+   "sec": 54.51,
+   "frame": 1635
+  },
+  "newton": {
+   "sec": 56.13,
+   "frame": 1684
+  },
+  "thirdLaw": {
+   "sec": 56.61,
+   "frame": 1698
+  },
+  "pushesAirDown": {
+   "sec": 58.11,
+   "frame": 1743
+  },
+  "airPushesWingUp": {
+   "sec": 59.97,
+   "frame": 1799
+  },
+  "up": {
+   "sec": 60.96,
+   "frame": 1829
+  },
+  "twoWays": {
+   "sec": 62.16,
+   "frame": 1865
+  },
+  "same": {
+   "sec": 63.63,
+   "frame": 1909
+  },
+  "physicalProcess": {
+   "sec": 64.14,
+   "frame": 1924
+  },
+  "catch": {
+   "sec": 66.21,
+   "frame": 1986
+  },
+  "enoughLift": {
+   "sec": 68.37,
+   "frame": 2051
+  },
+  "flowPast": {
+   "sec": 70.02,
+   "frame": 2101
+  },
+  "sufficientSpeed": {
+   "sec": 71.19,
+   "frame": 2136
+  },
+  "speedEnd": {
+   "sec": 72.27,
+   "frame": 2168
+  },
+  "thatsWhy": {
+   "sec": 72.63,
+   "frame": 2179
+  },
+  "accelerate": {
+   "sec": 73.77,
+   "frame": 2213
+  },
+  "runway": {
+   "sec": 74.849,
+   "frame": 2245
+  },
+  "takingOff": {
+   "sec": 75.66,
+   "frame": 2270
+  },
+  "off": {
+   "sec": 76.02,
+   "frame": 2281
+  },
+  "whatEngines": {
+   "sec": 77.91,
+   "frame": 2337
+  },
+  "doing": {
+   "sec": 78.87,
+   "frame": 2366
+  },
+  "thrust": {
+   "sec": 80.4,
+   "frame": 2412
+  },
+  "overcome": {
+   "sec": 82.32,
+   "frame": 2470
+  },
+  "airResistance": {
+   "sec": 83.16,
+   "frame": 2495
+  },
+  "maintainSpeed": {
+   "sec": 84,
+   "frame": 2520
+  },
+  "mostSurprising": {
+   "sec": 86.79,
+   "frame": 2604
+  },
+  "bothEngines": {
+   "sec": 89.31,
+   "frame": 2679
+  },
+  "suddenly": {
+   "sec": 90.171,
+   "frame": 2705
+  },
+  "stop": {
+   "sec": 90.6,
+   "frame": 2718
+  },
+  "doesItFall": {
+   "sec": 92.22,
+   "frame": 2767
+  },
+  "notImmediately": {
+   "sec": 93.15,
+   "frame": 2795
+  },
+  "gliding": {
+   "sec": 95.13,
+   "frame": 2854
+  },
+  "altitude": {
+   "sec": 96.21,
+   "frame": 2886
+  },
+  "forwardSpeed": {
+   "sec": 97.5,
+   "frame": 2925
+  },
+  "wingsContinue": {
+   "sec": 99.3,
+   "frame": 2979
+  },
+  "glideLift": {
+   "sec": 100.35,
+   "frame": 3011
+  },
+  "thatsRight": {
+   "sec": 101.16,
+   "frame": 3035
+  },
+  "passengerJet": {
+   "sec": 102.21,
+   "frame": 3066
+  },
+  "temporarily": {
+   "sec": 103.29,
+   "frame": 3099
+  },
+  "withoutPower": {
+   "sec": 104.46,
+   "frame": 3134
+  },
+  "nextTime": {
+   "sec": 106.65,
+   "frame": 3200
+  },
+  "overhead": {
+   "sec": 108.12,
+   "frame": 3244
+  },
+  "remember": {
+   "sec": 108.9,
+   "frame": 3267
+  },
+  "notMagic": {
+   "sec": 110.4,
+   "frame": 3312
+  },
+  "holdingTons": {
+   "sec": 111.36,
+   "frame": 3341
+  },
+  "invisible": {
+   "sec": 113.79,
+   "frame": 3414
+  },
+  "invisibleAir": {
+   "sec": 114.51,
+   "frame": 3435
+  },
+  "laws": {
+   "sec": 115.77,
+   "frame": 3473
+  },
+  "physics": {
+   "sec": 116.31,
+   "frame": 3489
+  },
+  "narrationEnd": {
+   "sec": 116.97,
+   "frame": 3509
+  }
+ }
+}

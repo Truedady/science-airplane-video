@@ -1,0 +1,1820 @@
+[
+{
+"conf": 1.0,
+"end": 0.3,
+"start": 0.06,
+"word": "why"
+},
+{
+"conf": 1.0,
+"end": 0.54,
+"start": 0.3,
+"word": "don't"
+},
+{
+"conf": 1.0,
+"end": 0.81,
+"start": 0.57,
+"word": "air"
+},
+{
+"conf": 1.0,
+"end": 1.23,
+"start": 0.81,
+"word": "planes"
+},
+{
+"conf": 1.0,
+"end": 1.53,
+"start": 1.23,
+"word": "fall"
+},
+{
+"conf": 1.0,
+"end": 1.68,
+"start": 1.53,
+"word": "out"
+},
+{
+"conf": 1.0,
+"end": 1.77,
+"start": 1.68,
+"word": "of"
+},
+{
+"conf": 1.0,
+"end": 1.83,
+"start": 1.77,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 2.43,
+"start": 1.83,
+"word": "sky"
+},
+{
+"conf": 1.0,
+"end": 3.6,
+"start": 3.27,
+"word": "right"
+},
+{
+"conf": 1.0,
+"end": 4.02,
+"start": 3.6,
+"word": "now"
+},
+{
+"conf": 1.0,
+"end": 4.74,
+"start": 4.08,
+"word": "thousands"
+},
+{
+"conf": 1.0,
+"end": 4.86,
+"start": 4.74,
+"word": "of"
+},
+{
+"conf": 1.0,
+"end": 5.22,
+"start": 4.86,
+"word": "people"
+},
+{
+"conf": 1.0,
+"end": 5.31,
+"start": 5.22,
+"word": "are"
+},
+{
+"conf": 1.0,
+"end": 5.82,
+"start": 5.31,
+"word": "flying"
+},
+{
+"conf": 1.0,
+"end": 6.0,
+"start": 5.82,
+"word": "through"
+},
+{
+"conf": 1.0,
+"end": 6.09,
+"start": 6.0,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 6.54,
+"start": 6.09,
+"word": "sky"
+},
+{
+"conf": 1.0,
+"end": 7.14,
+"start": 6.57,
+"word": "inside"
+},
+{
+"conf": 1.0,
+"end": 7.65,
+"start": 7.14,
+"word": "giant"
+},
+{
+"conf": 1.0,
+"end": 8.07,
+"start": 7.68,
+"word": "metal"
+},
+{
+"conf": 1.0,
+"end": 8.82,
+"start": 8.07,
+"word": "machines"
+},
+{
+"conf": 1.0,
+"end": 9.39,
+"start": 9.09,
+"word": "some"
+},
+{
+"conf": 1.0,
+"end": 9.51,
+"start": 9.39,
+"word": "of"
+},
+{
+"conf": 1.0,
+"end": 9.69,
+"start": 9.51,
+"word": "these"
+},
+{
+"conf": 1.0,
+"end": 10.14,
+"start": 9.69,
+"word": "planes"
+},
+{
+"conf": 0.421764,
+"end": 10.35,
+"start": 10.14,
+"word": "weigh"
+},
+{
+"conf": 1.0,
+"end": 10.98,
+"start": 10.38,
+"word": "hundreds"
+},
+{
+"conf": 1.0,
+"end": 11.07,
+"start": 10.98,
+"word": "of"
+},
+{
+"conf": 1.0,
+"end": 11.67,
+"start": 11.07,
+"word": "tons"
+},
+{
+"conf": 1.0,
+"end": 12.42,
+"start": 11.97,
+"word": "so"
+},
+{
+"conf": 1.0,
+"end": 12.75,
+"start": 12.51,
+"word": "why"
+},
+{
+"conf": 1.0,
+"end": 12.93,
+"start": 12.75,
+"word": "don't"
+},
+{
+"conf": 1.0,
+"end": 13.05,
+"start": 12.93,
+"word": "they"
+},
+{
+"conf": 1.0,
+"end": 13.41,
+"start": 13.05,
+"word": "simply"
+},
+{
+"conf": 1.0,
+"end": 13.92,
+"start": 13.41,
+"word": "fall"
+},
+{
+"conf": 1.0,
+"end": 14.52,
+"start": 14.34,
+"word": "and"
+},
+{
+"conf": 1.0,
+"end": 14.85,
+"start": 14.52,
+"word": "here's"
+},
+{
+"conf": 1.0,
+"end": 14.94,
+"start": 14.85,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 15.57,
+"start": 14.94,
+"word": "surprising"
+},
+{
+"conf": 1.0,
+"end": 15.93,
+"start": 15.57,
+"word": "part"
+},
+{
+"conf": 1.0,
+"end": 16.5,
+"start": 16.26,
+"word": "it's"
+},
+{
+"conf": 1.0,
+"end": 16.8,
+"start": 16.5,
+"word": "not"
+},
+{
+"conf": 1.0,
+"end": 16.95,
+"start": 16.8,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 17.55,
+"start": 16.98,
+"word": "engines"
+},
+{
+"conf": 1.0,
+"end": 17.67,
+"start": 17.55,
+"word": "that"
+},
+{
+"conf": 1.0,
+"end": 17.91,
+"start": 17.67,
+"word": "hold"
+},
+{
+"conf": 1.0,
+"end": 18.03,
+"start": 17.91,
+"word": "them"
+},
+{
+"conf": 1.0,
+"end": 18.33,
+"start": 18.03,
+"word": "up"
+},
+{
+"conf": 1.0,
+"end": 18.96,
+"start": 18.75,
+"word": "to"
+},
+{
+"conf": 1.0,
+"end": 19.47,
+"start": 18.96,
+"word": "understand"
+},
+{
+"conf": 1.0,
+"end": 19.92,
+"start": 19.47,
+"word": "why"
+},
+{
+"conf": 0.757628,
+"end": 20.61,
+"start": 20.1,
+"word": "imagine"
+},
+{
+"conf": 1.0,
+"end": 21.09,
+"start": 20.617271,
+"word": "sticking"
+},
+{
+"conf": 1.0,
+"end": 21.21,
+"start": 21.09,
+"word": "your"
+},
+{
+"conf": 1.0,
+"end": 21.6,
+"start": 21.21,
+"word": "hand"
+},
+{
+"conf": 1.0,
+"end": 21.84,
+"start": 21.63,
+"word": "out"
+},
+{
+"conf": 1.0,
+"end": 21.96,
+"start": 21.84,
+"word": "of"
+},
+{
+"conf": 1.0,
+"end": 21.99,
+"start": 21.96,
+"word": "a"
+},
+{
+"conf": 1.0,
+"end": 22.41,
+"start": 21.99,
+"word": "moving"
+},
+{
+"conf": 1.0,
+"end": 22.71,
+"start": 22.41,
+"word": "car"
+},
+{
+"conf": 1.0,
+"end": 23.22,
+"start": 22.71,
+"word": "window"
+},
+{
+"conf": 1.0,
+"end": 24.0,
+"start": 23.58,
+"word": "tilted"
+},
+{
+"conf": 1.0,
+"end": 24.6,
+"start": 24.0,
+"word": "slightly"
+},
+{
+"conf": 1.0,
+"end": 24.93,
+"start": 24.75,
+"word": "and"
+},
+{
+"conf": 1.0,
+"end": 25.08,
+"start": 24.93,
+"word": "you'll"
+},
+{
+"conf": 1.0,
+"end": 25.41,
+"start": 25.08,
+"word": "feel"
+},
+{
+"conf": 1.0,
+"end": 25.56,
+"start": 25.41,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 25.89,
+"start": 25.59,
+"word": "air"
+},
+{
+"conf": 1.0,
+"end": 26.34,
+"start": 25.89,
+"word": "pushing"
+},
+{
+"conf": 1.0,
+"end": 26.49,
+"start": 26.34,
+"word": "your"
+},
+{
+"conf": 1.0,
+"end": 26.85,
+"start": 26.49,
+"word": "hand"
+},
+{
+"conf": 0.727286,
+"end": 27.36,
+"start": 26.88,
+"word": "upward"
+},
+{
+"conf": 0.831277,
+"end": 27.93,
+"start": 27.72,
+"word": "an"
+},
+{
+"conf": 1.0,
+"end": 28.47,
+"start": 27.93,
+"word": "airplane"
+},
+{
+"conf": 1.0,
+"end": 28.77,
+"start": 28.47,
+"word": "wing"
+},
+{
+"conf": 1.0,
+"end": 29.1,
+"start": 28.77,
+"word": "works"
+},
+{
+"conf": 1.0,
+"end": 29.22,
+"start": 29.1,
+"word": "on"
+},
+{
+"conf": 1.0,
+"end": 29.25,
+"start": 29.22,
+"word": "a"
+},
+{
+"conf": 1.0,
+"end": 29.73,
+"start": 29.25,
+"word": "similar"
+},
+{
+"conf": 1.0,
+"end": 30.3,
+"start": 29.73,
+"word": "principle"
+},
+{
+"conf": 1.0,
+"end": 30.63,
+"start": 30.45,
+"word": "but"
+},
+{
+"conf": 1.0,
+"end": 30.75,
+"start": 30.63,
+"word": "on"
+},
+{
+"conf": 1.0,
+"end": 30.78,
+"start": 30.75,
+"word": "a"
+},
+{
+"conf": 1.0,
+"end": 31.26,
+"start": 30.78,
+"word": "much"
+},
+{
+"conf": 1.0,
+"end": 31.56,
+"start": 31.26,
+"word": "bigger"
+},
+{
+"conf": 1.0,
+"end": 32.07,
+"start": 31.56,
+"word": "scale"
+},
+{
+"conf": 1.0,
+"end": 32.7,
+"start": 32.49,
+"word": "as"
+},
+{
+"conf": 1.0,
+"end": 32.85,
+"start": 32.7,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 33.33,
+"start": 32.85,
+"word": "airplane"
+},
+{
+"conf": 1.0,
+"end": 33.66,
+"start": 33.33,
+"word": "moves"
+},
+{
+"conf": 1.0,
+"end": 34.2,
+"start": 33.66,
+"word": "forward"
+},
+{
+"conf": 1.0,
+"end": 34.68,
+"start": 34.38,
+"word": "air"
+},
+{
+"conf": 1.0,
+"end": 35.19,
+"start": 34.68,
+"word": "flows"
+},
+{
+"conf": 1.0,
+"end": 35.52,
+"start": 35.19,
+"word": "around"
+},
+{
+"conf": 0.842069,
+"end": 35.67,
+"start": 35.52,
+"word": "its"
+},
+{
+"conf": 1.0,
+"end": 36.21,
+"start": 35.67,
+"word": "wings"
+},
+{
+"conf": 1.0,
+"end": 36.78,
+"start": 36.57,
+"word": "their"
+},
+{
+"conf": 1.0,
+"end": 37.23,
+"start": 36.78,
+"word": "shape"
+},
+{
+"conf": 1.0,
+"end": 37.47,
+"start": 37.26,
+"word": "and"
+},
+{
+"conf": 0.700445,
+"end": 37.92,
+"start": 37.47,
+"word": "angle"
+},
+{
+"conf": 1.0,
+"end": 38.43,
+"start": 37.928987,
+"word": "change"
+},
+{
+"conf": 1.0,
+"end": 38.58,
+"start": 38.43,
+"word": "how"
+},
+{
+"conf": 1.0,
+"end": 38.73,
+"start": 38.58,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 38.94,
+"start": 38.73,
+"word": "air"
+},
+{
+"conf": 1.0,
+"end": 39.51,
+"start": 38.94,
+"word": "moves"
+},
+{
+"conf": 1.0,
+"end": 40.11,
+"start": 39.6,
+"word": "creating"
+},
+{
+"conf": 1.0,
+"end": 40.14,
+"start": 40.11,
+"word": "a"
+},
+{
+"conf": 1.0,
+"end": 40.65,
+"start": 40.14,
+"word": "difference"
+},
+{
+"conf": 1.0,
+"end": 40.77,
+"start": 40.65,
+"word": "in"
+},
+{
+"conf": 1.0,
+"end": 41.31,
+"start": 40.77,
+"word": "pressure"
+},
+{
+"conf": 1.0,
+"end": 42.33,
+"start": 41.73,
+"word": "typically"
+},
+{
+"conf": 1.0,
+"end": 42.54,
+"start": 42.42,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 42.99,
+"start": 42.54,
+"word": "pressure"
+},
+{
+"conf": 1.0,
+"end": 43.35,
+"start": 42.99,
+"word": "above"
+},
+{
+"conf": 1.0,
+"end": 43.44,
+"start": 43.35,
+"word": "the"
+},
+{
+"conf": 0.736055,
+"end": 43.47,
+"start": 43.44,
+"word": "a"
+},
+{
+"conf": 1.0,
+"end": 43.77,
+"start": 43.47,
+"word": "wing"
+},
+{
+"conf": 1.0,
+"end": 43.98,
+"start": 43.8,
+"word": "is"
+},
+{
+"conf": 1.0,
+"end": 44.46,
+"start": 43.98,
+"word": "lower"
+},
+{
+"conf": 1.0,
+"end": 44.61,
+"start": 44.46,
+"word": "than"
+},
+{
+"conf": 1.0,
+"end": 44.67,
+"start": 44.61,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 45.06,
+"start": 44.67,
+"word": "pressure"
+},
+{
+"conf": 1.0,
+"end": 45.42,
+"start": 45.06,
+"word": "below"
+},
+{
+"conf": 1.0,
+"end": 45.6,
+"start": 45.42,
+"word": "it"
+},
+{
+"conf": 1.0,
+"end": 46.26,
+"start": 45.99,
+"word": "this"
+},
+{
+"conf": 1.0,
+"end": 46.56,
+"start": 46.26,
+"word": "helps"
+},
+{
+"conf": 1.0,
+"end": 46.95,
+"start": 46.56,
+"word": "create"
+},
+{
+"conf": 1.0,
+"end": 47.07,
+"start": 46.95,
+"word": "an"
+},
+{
+"conf": 1.0,
+"end": 47.55,
+"start": 47.1,
+"word": "upward"
+},
+{
+"conf": 1.0,
+"end": 47.94,
+"start": 47.55,
+"word": "force"
+},
+{
+"conf": 1.0,
+"end": 48.36,
+"start": 47.94,
+"word": "called"
+},
+{
+"conf": 1.0,
+"end": 49.02,
+"start": 48.39,
+"word": "lift"
+},
+{
+"conf": 1.0,
+"end": 49.65,
+"start": 49.47,
+"word": "but"
+},
+{
+"conf": 1.0,
+"end": 49.83,
+"start": 49.65,
+"word": "there's"
+},
+{
+"conf": 1.0,
+"end": 50.25,
+"start": 49.83,
+"word": "another"
+},
+{
+"conf": 1.0,
+"end": 50.43,
+"start": 50.25,
+"word": "way"
+},
+{
+"conf": 1.0,
+"end": 50.55,
+"start": 50.43,
+"word": "to"
+},
+{
+"conf": 1.0,
+"end": 51.09,
+"start": 50.55,
+"word": "understand"
+},
+{
+"conf": 1.0,
+"end": 51.3,
+"start": 51.09,
+"word": "what's"
+},
+{
+"conf": 1.0,
+"end": 51.81,
+"start": 51.3,
+"word": "happening"
+},
+{
+"conf": 1.0,
+"end": 52.35,
+"start": 52.2,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 52.77,
+"start": 52.35,
+"word": "wing"
+},
+{
+"conf": 1.0,
+"end": 53.16,
+"start": 52.77,
+"word": "pushes"
+},
+{
+"conf": 1.0,
+"end": 53.22,
+"start": 53.16,
+"word": "a"
+},
+{
+"conf": 1.0,
+"end": 53.79,
+"start": 53.22,
+"word": "huge"
+},
+{
+"conf": 1.0,
+"end": 54.06,
+"start": 53.79,
+"word": "amount"
+},
+{
+"conf": 1.0,
+"end": 54.18,
+"start": 54.06,
+"word": "of"
+},
+{
+"conf": 1.0,
+"end": 54.51,
+"start": 54.21,
+"word": "air"
+},
+{
+"conf": 1.0,
+"end": 55.17,
+"start": 54.51,
+"word": "downward"
+},
+{
+"conf": 1.0,
+"end": 55.62,
+"start": 55.47,
+"word": "and"
+},
+{
+"conf": 1.0,
+"end": 56.01,
+"start": 55.62,
+"word": "according"
+},
+{
+"conf": 1.0,
+"end": 56.13,
+"start": 56.01,
+"word": "to"
+},
+{
+"conf": 1.0,
+"end": 56.61,
+"start": 56.13,
+"word": "newton's"
+},
+{
+"conf": 1.0,
+"end": 56.94,
+"start": 56.61,
+"word": "third"
+},
+{
+"conf": 1.0,
+"end": 57.3,
+"start": 56.94,
+"word": "law"
+},
+{
+"conf": 1.0,
+"end": 57.69,
+"start": 57.48,
+"word": "when"
+},
+{
+"conf": 1.0,
+"end": 57.78,
+"start": 57.69,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 58.11,
+"start": 57.78,
+"word": "wing"
+},
+{
+"conf": 1.0,
+"end": 58.5,
+"start": 58.11,
+"word": "pushes"
+},
+{
+"conf": 1.0,
+"end": 58.74,
+"start": 58.5,
+"word": "air"
+},
+{
+"conf": 1.0,
+"end": 59.25,
+"start": 58.74,
+"word": "down"
+},
+{
+"conf": 1.0,
+"end": 59.61,
+"start": 59.4,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 59.97,
+"start": 59.64,
+"word": "air"
+},
+{
+"conf": 1.0,
+"end": 60.42,
+"start": 59.97,
+"word": "pushes"
+},
+{
+"conf": 1.0,
+"end": 60.54,
+"start": 60.42,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 60.9,
+"start": 60.54,
+"word": "wing"
+},
+{
+"conf": 1.0,
+"end": 61.32,
+"start": 60.96,
+"word": "up"
+},
+{
+"conf": 1.0,
+"end": 62.07,
+"start": 61.74,
+"word": "these"
+},
+{
+"conf": 1.0,
+"end": 62.16,
+"start": 62.07,
+"word": "are"
+},
+{
+"conf": 1.0,
+"end": 62.49,
+"start": 62.16,
+"word": "two"
+},
+{
+"conf": 1.0,
+"end": 62.88,
+"start": 62.49,
+"word": "ways"
+},
+{
+"conf": 1.0,
+"end": 62.97,
+"start": 62.88,
+"word": "of"
+},
+{
+"conf": 1.0,
+"end": 63.6,
+"start": 62.97,
+"word": "describing"
+},
+{
+"conf": 1.0,
+"end": 63.66,
+"start": 63.6,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 64.14,
+"start": 63.66,
+"word": "same"
+},
+{
+"conf": 1.0,
+"end": 64.62,
+"start": 64.14,
+"word": "physical"
+},
+{
+"conf": 1.0,
+"end": 65.34,
+"start": 64.62,
+"word": "process"
+},
+{
+"conf": 1.0,
+"end": 65.94,
+"start": 65.79,
+"word": "but"
+},
+{
+"conf": 1.0,
+"end": 66.15,
+"start": 65.94,
+"word": "there's"
+},
+{
+"conf": 1.0,
+"end": 66.21,
+"start": 66.15,
+"word": "a"
+},
+{
+"conf": 1.0,
+"end": 66.78,
+"start": 66.21,
+"word": "catch"
+},
+{
+"conf": 1.0,
+"end": 67.35,
+"start": 67.17,
+"word": "for"
+},
+{
+"conf": 1.0,
+"end": 67.44,
+"start": 67.35,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 67.83,
+"start": 67.44,
+"word": "wings"
+},
+{
+"conf": 1.0,
+"end": 67.95,
+"start": 67.83,
+"word": "to"
+},
+{
+"conf": 1.0,
+"end": 68.37,
+"start": 67.95,
+"word": "produce"
+},
+{
+"conf": 1.0,
+"end": 68.64,
+"start": 68.37,
+"word": "enough"
+},
+{
+"conf": 1.0,
+"end": 69.12,
+"start": 68.64,
+"word": "lift"
+},
+{
+"conf": 1.0,
+"end": 69.6,
+"start": 69.33,
+"word": "air"
+},
+{
+"conf": 1.0,
+"end": 69.9,
+"start": 69.6,
+"word": "needs"
+},
+{
+"conf": 1.0,
+"end": 70.02,
+"start": 69.9,
+"word": "to"
+},
+{
+"conf": 1.0,
+"end": 70.35,
+"start": 70.02,
+"word": "flow"
+},
+{
+"conf": 0.818354,
+"end": 70.8,
+"start": 70.35,
+"word": "pass"
+},
+{
+"conf": 1.0,
+"end": 71.01,
+"start": 70.805449,
+"word": "them"
+},
+{
+"conf": 1.0,
+"end": 71.19,
+"start": 71.04,
+"word": "at"
+},
+{
+"conf": 1.0,
+"end": 71.73,
+"start": 71.19,
+"word": "sufficient"
+},
+{
+"conf": 1.0,
+"end": 72.27,
+"start": 71.73,
+"word": "speed"
+},
+{
+"conf": 1.0,
+"end": 72.96,
+"start": 72.63,
+"word": "that's"
+},
+{
+"conf": 1.0,
+"end": 73.2,
+"start": 72.96,
+"word": "why"
+},
+{
+"conf": 1.0,
+"end": 73.77,
+"start": 73.2,
+"word": "airplanes"
+},
+{
+"conf": 1.0,
+"end": 74.46,
+"start": 73.77,
+"word": "accelerate"
+},
+{
+"conf": 1.0,
+"end": 74.73,
+"start": 74.46,
+"word": "along"
+},
+{
+"conf": 1.0,
+"end": 74.85,
+"start": 74.73,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 75.3,
+"start": 74.85,
+"word": "runway"
+},
+{
+"conf": 1.0,
+"end": 75.66,
+"start": 75.3,
+"word": "before"
+},
+{
+"conf": 1.0,
+"end": 76.02,
+"start": 75.66,
+"word": "taking"
+},
+{
+"conf": 1.0,
+"end": 76.41,
+"start": 76.02,
+"word": "off"
+},
+{
+"conf": 1.0,
+"end": 77.34,
+"start": 76.86,
+"word": "so"
+},
+{
+"conf": 1.0,
+"end": 77.67,
+"start": 77.43,
+"word": "what"
+},
+{
+"conf": 1.0,
+"end": 77.73,
+"start": 77.67,
+"word": "are"
+},
+{
+"conf": 1.0,
+"end": 77.91,
+"start": 77.73,
+"word": "the"
+},
+{
+"conf": 0.821994,
+"end": 78.42,
+"start": 77.91,
+"word": "engines"
+},
+{
+"conf": 1.0,
+"end": 78.87,
+"start": 78.42,
+"word": "actually"
+},
+{
+"conf": 1.0,
+"end": 79.35,
+"start": 78.87,
+"word": "doing"
+},
+{
+"conf": 1.0,
+"end": 79.92,
+"start": 79.71,
+"word": "they"
+},
+{
+"conf": 1.0,
+"end": 80.4,
+"start": 79.92,
+"word": "create"
+},
+{
+"conf": 1.0,
+"end": 81.06,
+"start": 80.4,
+"word": "thrust"
+},
+{
+"conf": 1.0,
+"end": 81.42,
+"start": 81.15,
+"word": "which"
+},
+{
+"conf": 1.0,
+"end": 81.69,
+"start": 81.42,
+"word": "helps"
+},
+{
+"conf": 1.0,
+"end": 81.84,
+"start": 81.69,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 82.32,
+"start": 81.84,
+"word": "airplane"
+},
+{
+"conf": 1.0,
+"end": 82.92,
+"start": 82.32,
+"word": "overcome"
+},
+{
+"conf": 1.0,
+"end": 83.16,
+"start": 82.95,
+"word": "air"
+},
+{
+"conf": 1.0,
+"end": 83.76,
+"start": 83.16,
+"word": "resistance"
+},
+{
+"conf": 1.0,
+"end": 84.0,
+"start": 83.82,
+"word": "and"
+},
+{
+"conf": 1.0,
+"end": 84.54,
+"start": 84.0,
+"word": "maintain"
+},
+{
+"conf": 1.0,
+"end": 85.08,
+"start": 84.54,
+"word": "speed"
+},
+{
+"conf": 1.0,
+"end": 85.83,
+"start": 85.65,
+"word": "and"
+},
+{
+"conf": 1.0,
+"end": 86.31,
+"start": 85.83,
+"word": "now"
+},
+{
+"conf": 1.0,
+"end": 86.52,
+"start": 86.37,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 86.79,
+"start": 86.52,
+"word": "most"
+},
+{
+"conf": 1.0,
+"end": 87.48,
+"start": 86.79,
+"word": "surprising"
+},
+{
+"conf": 1.0,
+"end": 88.05,
+"start": 87.48,
+"word": "question"
+},
+{
+"conf": 1.0,
+"end": 88.71,
+"start": 88.44,
+"word": "what"
+},
+{
+"conf": 1.0,
+"end": 89.16,
+"start": 88.71,
+"word": "happens"
+},
+{
+"conf": 1.0,
+"end": 89.31,
+"start": 89.16,
+"word": "if"
+},
+{
+"conf": 1.0,
+"end": 89.67,
+"start": 89.31,
+"word": "both"
+},
+{
+"conf": 1.0,
+"end": 90.18,
+"start": 89.67,
+"word": "engines"
+},
+{
+"conf": 1.0,
+"end": 90.6,
+"start": 90.18,
+"word": "suddenly"
+},
+{
+"conf": 1.0,
+"end": 91.11,
+"start": 90.6,
+"word": "stop"
+},
+{
+"conf": 1.0,
+"end": 91.68,
+"start": 91.47,
+"word": "does"
+},
+{
+"conf": 1.0,
+"end": 91.83,
+"start": 91.68,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 92.22,
+"start": 91.83,
+"word": "airplane"
+},
+{
+"conf": 1.0,
+"end": 92.7,
+"start": 92.22,
+"word": "fall"
+},
+{
+"conf": 1.0,
+"end": 93.45,
+"start": 93.15,
+"word": "not"
+},
+{
+"conf": 1.0,
+"end": 94.14,
+"start": 93.45,
+"word": "immediately"
+},
+{
+"conf": 1.0,
+"end": 94.68,
+"start": 94.5,
+"word": "it"
+},
+{
+"conf": 1.0,
+"end": 94.83,
+"start": 94.68,
+"word": "can"
+},
+{
+"conf": 1.0,
+"end": 95.13,
+"start": 94.83,
+"word": "keep"
+},
+{
+"conf": 1.0,
+"end": 95.7,
+"start": 95.13,
+"word": "gliding"
+},
+{
+"conf": 1.0,
+"end": 96.18,
+"start": 95.79,
+"word": "using"
+},
+{
+"conf": 1.0,
+"end": 96.84,
+"start": 96.21,
+"word": "altitude"
+},
+{
+"conf": 1.0,
+"end": 96.96,
+"start": 96.84,
+"word": "to"
+},
+{
+"conf": 1.0,
+"end": 97.5,
+"start": 96.96,
+"word": "maintain"
+},
+{
+"conf": 1.0,
+"end": 98.01,
+"start": 97.5,
+"word": "forward"
+},
+{
+"conf": 1.0,
+"end": 98.55,
+"start": 98.01,
+"word": "speed"
+},
+{
+"conf": 1.0,
+"end": 98.79,
+"start": 98.58,
+"word": "while"
+},
+{
+"conf": 1.0,
+"end": 98.88,
+"start": 98.79,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 99.3,
+"start": 98.88,
+"word": "wings"
+},
+{
+"conf": 1.0,
+"end": 99.87,
+"start": 99.3,
+"word": "continue"
+},
+{
+"conf": 1.0,
+"end": 100.35,
+"start": 99.87,
+"word": "producing"
+},
+{
+"conf": 1.0,
+"end": 100.8,
+"start": 100.35,
+"word": "lift"
+},
+{
+"conf": 1.0,
+"end": 101.43,
+"start": 101.16,
+"word": "that's"
+},
+{
+"conf": 1.0,
+"end": 101.79,
+"start": 101.43,
+"word": "right"
+},
+{
+"conf": 1.0,
+"end": 102.21,
+"start": 102.09,
+"word": "a"
+},
+{
+"conf": 1.0,
+"end": 102.81,
+"start": 102.21,
+"word": "passenger"
+},
+{
+"conf": 1.0,
+"end": 103.11,
+"start": 102.81,
+"word": "jet"
+},
+{
+"conf": 1.0,
+"end": 103.92,
+"start": 103.11,
+"word": "contemporary"
+},
+{
+"conf": 0.505911,
+"end": 104.064023,
+"start": 103.92,
+"word": "early"
+},
+{
+"conf": 1.0,
+"end": 104.46,
+"start": 104.064023,
+"word": "fly"
+},
+{
+"conf": 1.0,
+"end": 105.0,
+"start": 104.46,
+"word": "without"
+},
+{
+"conf": 1.0,
+"end": 105.36,
+"start": 105.0,
+"word": "engine"
+},
+{
+"conf": 1.0,
+"end": 105.81,
+"start": 105.36,
+"word": "power"
+},
+{
+"conf": 1.0,
+"end": 106.62,
+"start": 106.2,
+"word": "so"
+},
+{
+"conf": 1.0,
+"end": 107.01,
+"start": 106.65,
+"word": "next"
+},
+{
+"conf": 1.0,
+"end": 107.22,
+"start": 107.01,
+"word": "time"
+},
+{
+"conf": 1.0,
+"end": 107.34,
+"start": 107.22,
+"word": "you"
+},
+{
+"conf": 1.0,
+"end": 107.52,
+"start": 107.34,
+"word": "see"
+},
+{
+"conf": 1.0,
+"end": 107.64,
+"start": 107.52,
+"word": "an"
+},
+{
+"conf": 1.0,
+"end": 108.12,
+"start": 107.64,
+"word": "airplane"
+},
+{
+"conf": 1.0,
+"end": 108.75,
+"start": 108.12,
+"word": "overhead"
+},
+{
+"conf": 1.0,
+"end": 109.5,
+"start": 108.9,
+"word": "remember"
+},
+{
+"conf": 1.0,
+"end": 110.1,
+"start": 109.86,
+"word": "it's"
+},
+{
+"conf": 1.0,
+"end": 110.4,
+"start": 110.1,
+"word": "not"
+},
+{
+"conf": 1.0,
+"end": 111.0,
+"start": 110.4,
+"word": "magic"
+},
+{
+"conf": 1.0,
+"end": 111.36,
+"start": 111.0,
+"word": "holding"
+},
+{
+"conf": 1.0,
+"end": 111.93,
+"start": 111.36,
+"word": "hundreds"
+},
+{
+"conf": 1.0,
+"end": 112.05,
+"start": 111.93,
+"word": "of"
+},
+{
+"conf": 1.0,
+"end": 112.47,
+"start": 112.05,
+"word": "tons"
+},
+{
+"conf": 1.0,
+"end": 112.56,
+"start": 112.47,
+"word": "in"
+},
+{
+"conf": 1.0,
+"end": 112.65,
+"start": 112.56,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 113.16,
+"start": 112.65,
+"word": "sky"
+},
+{
+"conf": 1.0,
+"end": 113.79,
+"start": 113.55,
+"word": "it's"
+},
+{
+"conf": 1.0,
+"end": 114.48,
+"start": 113.79,
+"word": "invisible"
+},
+{
+"conf": 1.0,
+"end": 114.93,
+"start": 114.51,
+"word": "air"
+},
+{
+"conf": 1.0,
+"end": 115.56,
+"start": 115.02,
+"word": "working"
+},
+{
+"conf": 1.0,
+"end": 115.71,
+"start": 115.56,
+"word": "with"
+},
+{
+"conf": 1.0,
+"end": 115.77,
+"start": 115.71,
+"word": "the"
+},
+{
+"conf": 1.0,
+"end": 116.22,
+"start": 115.77,
+"word": "laws"
+},
+{
+"conf": 1.0,
+"end": 116.31,
+"start": 116.22,
+"word": "of"
+},
+{
+"conf": 1.0,
+"end": 116.97,
+"start": 116.31,
+"word": "physics"
+}
+]
