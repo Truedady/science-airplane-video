@@ -1,5 +1,6 @@
 import React from 'react';
 import {EASE, prog} from '../lib/anim';
+import {useInset} from '../lib/layout';
 import {COLORS, FONT_BODY, FONT_DISPLAY} from '../theme';
 
 /**
@@ -88,6 +89,7 @@ export const Tag: React.FC<{
 	size?: number;
 	style?: React.CSSProperties;
 }> = ({children, frame, at, out, color = COLORS.cyan, size = 22, style}) => {
+	const inset = useInset();
 	const p = prog(frame, at, at + 14, EASE.out);
 	const o = out === undefined ? 0 : prog(frame, out, out + 10, EASE.in);
 	if (p <= 0 || o >= 1) return null;
@@ -113,6 +115,8 @@ export const Tag: React.FC<{
 				transform: `translateY(${(1 - p) * 16}px)`,
 				whiteSpace: 'nowrap',
 				...style,
+				...(typeof style?.left === 'number' ? {left: style.left + inset} : {}),
+				...(typeof style?.right === 'number' ? {right: style.right + inset} : {}),
 			}}
 		>
 			<span style={{width: size * 0.45, height: size * 0.45, borderRadius: '50%', background: color, boxShadow: `0 0 12px ${color}`}} />
@@ -130,13 +134,14 @@ export const Kicker: React.FC<{index: string; title: string; frame: number; at: 
 	out,
 	style,
 }) => {
+	const inset = useInset();
 	const p = prog(frame, at, at + 20, EASE.out);
 	const o = out === undefined ? 0 : prog(frame, out, out + 12, EASE.in);
 	return (
 		<div
 			style={{
 				position: 'absolute',
-				left: 96,
+				left: 96 + inset,
 				top: 84,
 				display: 'flex',
 				alignItems: 'center',

@@ -12,6 +12,7 @@ import {EASE, kf, prog, rng} from '../lib/anim';
 import {COLORS} from '../theme';
 import {CUES, FPS, local} from '../timeline';
 import {FLOW_RATE} from './S4Lift';
+import {useInset} from '../lib/layout';
 
 const L = (sec: number) => local('speed', sec);
 const VIEW: View = {cx: 820, cy: 560, s: 165};
@@ -60,6 +61,7 @@ const Runway: React.FC<{scroll: number; groundY: number}> = ({scroll, groundY}) 
 
 export const S6Speed: React.FC = () => {
 	const frame = useCurrentFrame();
+	const inset = useInset();
 
 	// --- Phase A: airspeed vs lift on the airfoil ---
 	const speedA = kf(frame, [0, L(CUES.catch), L(CUES.catch) + 34, L(CUES.flowPast) - 6, L(CUES.speedEnd)], [1, 1, 0.3, 0.3, 1.1], EASE.inOut);
@@ -122,9 +124,11 @@ export const S6Speed: React.FC = () => {
 			</AbsoluteFill>
 
 			{/* Instruments */}
-			<svg width={1920} height={1080} style={{position: 'absolute'}}>
+			<svg width={1920} height={1080} style={{position: 'absolute', overflow: 'visible'}}>
+				<g transform={`translate(${-inset / 2} 0)`}>
 				<Gauge cx={1640} cy={300} r={120} value={v / 1.15} label="AIRSPEED" color={COLORS.cyan} opacity={prog(frame, L(CUES.catch) - 10, L(CUES.catch) + 6)} status={lift >= WEIGHT_LINE ? 'ENOUGH FOR FLIGHT' : 'TOO SLOW'} />
 				<Meter x={1610} y={560} h={300} value={lift} marker={WEIGHT_LINE} label="LIFT" markerLabel="WEIGHT" color={lift >= WEIGHT_LINE ? COLORS.cyan : COLORS.orangeSoft} opacity={prog(frame, L(CUES.catch) - 4, L(CUES.catch) + 12)} />
+				</g>
 			</svg>
 			<Vignette strength={0.4} />
 			<Kicker index="04" title="WHY SPEED MATTERS" frame={frame} at={L(CUES.catch) - 6} out={L(CUES.thatsWhy) - 10} />

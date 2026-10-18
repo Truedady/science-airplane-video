@@ -13,12 +13,14 @@ import {S9Finale} from './scenes/S9Finale';
 import './theme';
 import {FPS, HEIGHT, TOTAL_FRAMES, WIDTH, sceneFrames} from './timeline';
 import {AirplaneExplainer} from './Video';
+import {AirplaneShorts} from './Shorts';
 
 const common = {fps: FPS, width: WIDTH, height: HEIGHT};
 
 export const RemotionRoot: React.FC = () => (
 	<>
 		<Composition id="AirplaneExplainer" component={AirplaneExplainer} durationInFrames={TOTAL_FRAMES} {...common} />
+		<Composition id="AirplaneShorts" component={AirplaneShorts} durationInFrames={TOTAL_FRAMES} fps={FPS} width={1080} height={1920} />
 		{/* Each scene on its own (local frame 0 = scene start on the master timeline; no audio). */}
 		<Folder name="Scenes">
 			<Composition id="S1-Mystery" component={S1Mystery} durationInFrames={sceneFrames('mystery').durationInFrames} {...common} />

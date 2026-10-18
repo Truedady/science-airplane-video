@@ -13,6 +13,7 @@ import {COLORS, FONT_BODY, FONT_DISPLAY} from '../theme';
 import {CUES, FPS, local} from '../timeline';
 import {Exhaust, FORCE_COLORS} from './S7Forces';
 import {FLOW_RATE} from './S4Lift';
+import {useInset} from '../lib/layout';
 
 const L = (sec: number) => local('glide', sec);
 /** Visualised glide-path angle (degrees). Real airliner glides are shallow. */
@@ -21,6 +22,7 @@ const INSET: View = {cx: 260, cy: 175, s: 52};
 
 export const S8Glide: React.FC = () => {
 	const frame = useCurrentFrame();
+	const safe = useInset();
 	const g0 = L(CUES.gliding) - 10;
 	const glideP = prog(frame, g0, g0 + 50, EASE.inOut);
 
@@ -106,10 +108,10 @@ export const S8Glide: React.FC = () => {
 
 			{/* Instruments */}
 			<svg width={1920} height={1080} style={{position: 'absolute'}}>
-				<Gauge cx={1720} cy={190} r={92} value={0.78 * thrust} label="THRUST" color={thrust > 0.05 ? FORCE_COLORS.thrust : '#ff6b6b'} status={engineOff > 0.9 ? 'ENGINES OFF' : undefined} opacity={prog(frame, L(CUES.bothEngines) - 12, L(CUES.bothEngines))} />
-				<Gauge cx={1720} cy={470} r={92} value={0.7 + wobble(frame, 0.5) * 0.01} label="AIRSPEED" color={COLORS.cyan} status={L(CUES.forwardSpeed) < frame ? 'MAINTAINED' : undefined} opacity={prog(frame, L(CUES.gliding), L(CUES.gliding) + 16)} />
+				<Gauge cx={1720 - safe} cy={190} r={92} value={0.78 * thrust} label="THRUST" color={thrust > 0.05 ? FORCE_COLORS.thrust : '#ff6b6b'} status={engineOff > 0.9 ? 'ENGINES OFF' : undefined} opacity={prog(frame, L(CUES.bothEngines) - 12, L(CUES.bothEngines))} />
+				<Gauge cx={1720 - safe} cy={470} r={92} value={0.7 + wobble(frame, 0.5) * 0.01} label="AIRSPEED" color={COLORS.cyan} status={L(CUES.forwardSpeed) < frame ? 'MAINTAINED' : undefined} opacity={prog(frame, L(CUES.gliding), L(CUES.gliding) + 16)} />
 				{/* altitude tape */}
-				<g opacity={prog(frame, L(CUES.altitude) - 6, L(CUES.altitude) + 10)}>
+				<g opacity={prog(frame, L(CUES.altitude) - 6, L(CUES.altitude) + 10)} transform={`translate(${safe} 0)`}>
 					<rect x={90} y={250} width={90} height={460} rx={16} fill="rgba(3,11,31,0.72)" stroke="rgba(140,201,255,0.3)" strokeWidth={2} />
 					{new Array(12).fill(0).map((_, i) => {
 						const yy = 270 + ((i * 40 + descent * 0.9) % 440);
@@ -129,7 +131,7 @@ export const S8Glide: React.FC = () => {
 			<div
 				style={{
 					position: 'absolute',
-					right: 70,
+					right: 70 + safe,
 					bottom: 70,
 					width: 520,
 					height: 330,

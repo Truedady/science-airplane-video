@@ -10,6 +10,7 @@ import {Headline, Tag} from '../components/Typography';
 import {EASE, fade, kf, prog, wobble} from '../lib/anim';
 import {COLORS, FONT_BODY, FONT_DISPLAY} from '../theme';
 import {CUES, local} from '../timeline';
+import {useInset} from '../lib/layout';
 
 const L = (sec: number) => local('mystery', sec);
 
@@ -47,6 +48,7 @@ const DistantJets: React.FC<{frame: number; opacity: number}> = ({frame, opacity
 
 export const S1Mystery: React.FC = () => {
 	const frame = useCurrentFrame();
+	const inset = useInset();
 
 	// Camera: wide establishing shot → push toward the aircraft.
 	const zoom = kf(frame, [0, L(CUES.titleOut) + 6, L(CUES.giantMetal) + 10, L(CUES.weigh), L(CUES.fall) + 30], [0.36, 0.42, 1.3, 0.84, 0.8], EASE.inOut);
@@ -114,7 +116,7 @@ export const S1Mystery: React.FC = () => {
 			<div
 				style={{
 					position: 'absolute',
-					right: 110,
+					right: 110 + inset,
 					top: 170,
 					width: 360,
 					padding: '26px 30px',
